@@ -21,7 +21,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ selected, onSelect }) => (
     <Tooltip content="Code Editor">
       <IconButton
         variant={selected === "code" ? "solid" : "soft"}
-        color="gray"
+        color="plum"
         onClick={() => onSelect("code")}
         aria-label="Code Editor"
         size="3"
@@ -32,7 +32,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ selected, onSelect }) => (
     <Tooltip content="Settings">
       <IconButton
         variant={selected === "settings" ? "solid" : "soft"}
-        color="gray"
+        color="plum"
         onClick={() => onSelect("settings")}
         aria-label="Settings"
         size="3"
