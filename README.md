@@ -1,7 +1,10 @@
-# Tauri + React + Typescript
+# Railyard
+Supercharge rails console 🚂
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+### About Railyard
 
-## Recommended IDE Setup
+Developed in Tauri, with a React frontend and Rust backend. Railyard provides a text editor for rails console with AI superpowers, as well as beatiful visualizers for outputs.
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+---
+
+[Official Tauri Docs](https://tauri.app/reference/acl/capability/)
