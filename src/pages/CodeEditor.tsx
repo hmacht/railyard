@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { Flex, TextArea, Text, Separator, Box } from "@radix-ui/themes";
 
-const CodeEditor: React.FC = () => {
-  const [code, setCode] = useState('// Write your code here...');
-  
+interface CodeEditorProps {
+  code: string;
+  setCode: (code: string) => void;
+  output: string;
+}
+
+const CodeEditor: React.FC<CodeEditorProps> = ({ code, setCode, output }) => {
   return (
     <Flex direction="row" style={{ flex: 1, width: '100%', height: '100%' }}>
       <Box p="3" style={{ flex: 1 }}>
@@ -29,9 +33,9 @@ const CodeEditor: React.FC = () => {
         style={{ height: '100%' }} 
       />
       
-      <Box p="3" style={{ flex: 1, backgroundColor: 'var(--gray-2)' }}>
-        <Text style={{ fontFamily: 'monospace'}}>
-          This is a test of the output.
+      <Box p="3" style={{ flex: 1, backgroundColor: 'var(--gray-2)', overflow: 'auto' }}>
+        <Text style={{ fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
+          {output || 'Output will appear here...'}
         </Text>
       </Box>
     </Flex>

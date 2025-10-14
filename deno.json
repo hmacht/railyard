@@ -14,7 +14,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "lib": ["dom", "es2017"]
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.window", "esnext"]
   },
   "lock": true
 }
