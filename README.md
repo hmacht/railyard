@@ -1,13 +1,15 @@
 # Railyard
 Supercharge rails console 🚂
 
+Railyard provides a text editor for rails console with AI superpowers, as well as beatiful visualizers for outputs.
+
 ---
 
 ### About Railyard
 
-Developed in [Tauri](https://tauri.app/), with a [React](https://react.dev/) frontend and [Rust](https://rust-lang.org/) backend. Railyard provides a text editor for rails console with AI superpowers, as well as beatiful visualizers for outputs.
+Developed in [Tauri](https://tauri.app/), with a [React](https://react.dev/) frontend and [Rust](https://rust-lang.org/) backend. 
 
-Frontend packages managed by [Deno](https://deno.com/) 🦖! 
+JS runtime powered by [Deno](https://deno.com/)! 🦖
 
 ---
 
