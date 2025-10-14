@@ -9,4 +9,4 @@ Developed in Tauri, with a React frontend and Rust backend. Railyard provides a 
 
 ---
 
-[Official Tauri Docs](https://tauri.app/reference/acl/capability/)
+[Official Tauri Docs](https://tauri.app/)
