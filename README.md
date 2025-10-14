@@ -13,4 +13,13 @@ JS runtime powered by [Deno](https://deno.com/)! 🦖
 
 ---
 
+### Geting started
+
+```bash
+deno install
+deno task tauri dev
+```
+
+---
+
 Founded by Henry Macht
