@@ -15,8 +15,6 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ onSettingsClick, code, setOutput,
   const handleRun = async () => {
     setIsRunning(true);
     try {
-      // Temporary delay for testing
-      await new Promise(resolve => setTimeout(resolve, 2000));
       const result = await invoke<string>("run_code", { code, path: projectPath });
       const formattedOutput = JSON.stringify(result, null, 2);
       setOutput(formattedOutput);
