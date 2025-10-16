@@ -32,7 +32,7 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ onSettingsClick, code, setOutput,
           onClick={onSettingsClick}
         >
           <TargetIcon width={16} height={16} />
-          /Users/henrymacht/Dev/railyard
+          {projectPath}
         </Button>
         <Button variant="solid" color="green" size="1" onClick={handleRun}>
           <PlayIcon width={16} height={16} />

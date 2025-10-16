@@ -11,12 +11,12 @@ function App() {
   const [themeAppearance, setThemeAppearance] = useState<'light' | 'dark'>('light');
   const [code, setCode] = useState('// Write your code here...');
   const [output, setOutput] = useState('');
-  const [projectPath, setProjectPath] = useState('/Users/henrymacht/Dev/railyard');
+  const [projectPath, setProjectPath] = useState('/Users/henrymacht/Dev/fake_rails_app');
 
   return (
     <Theme
       appearance={themeAppearance}
-      accentColor="mint"
+      accentColor="green"
       grayColor="gray"
       panelBackground="solid"
       scaling="100%"
