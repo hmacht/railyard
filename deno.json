@@ -8,8 +8,11 @@
     "react": "npm:react@^18.3.1",
     "react-dom": "npm:react-dom@^18.3.1",
     "react-dom/client": "npm:react-dom@^18.3.1/client",
+    "@types/react": "npm:@types/react@^18.3",
+    "@types/react-dom": "npm:@types/react-dom@^18.3",
     "@radix-ui/themes": "npm:@radix-ui/themes",
-    "@radix-ui/react-icons": "npm:@radix-ui/react-icons"
+    "@radix-ui/react-icons": "npm:@radix-ui/react-icons",
+    "@phosphor-icons/react": "npm:@phosphor-icons/react"
   },
   "compilerOptions": {
     "jsx": "react-jsx",

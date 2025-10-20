@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Heading, Switch, Text } from "@radix-ui/themes";
+import { Flex, Heading, Switch, Text, Box } from "@radix-ui/themes";
 
 interface SettingsProps {
   themeAppearance: 'light' | 'dark';
@@ -7,16 +7,18 @@ interface SettingsProps {
 }
 
 const Settings: React.FC<SettingsProps> = ({ themeAppearance, setThemeAppearance }) => (
-  <Flex direction="column" gap="4">
-    <Heading size="4">Settings</Heading>
-    <Flex align="center" gap="2">
-      <Text>Dark Mode</Text>
-      <Switch
-        checked={themeAppearance === 'dark'}
-        onCheckedChange={(checked) => setThemeAppearance(checked ? 'dark' : 'light')}
-      />
+  <Box p="4" style={{ width: '100%', maxWidth: '800px' }}>
+    <Flex direction="column" gap="4">
+      <Heading size="4">Settings</Heading>
+      <Flex align="center" gap="2">
+        <Text>Dark Mode</Text>
+        <Switch
+          checked={themeAppearance === 'dark'}
+          onCheckedChange={(checked) => setThemeAppearance(checked ? 'dark' : 'light')}
+        />
+      </Flex>
     </Flex>
-  </Flex>
+  </Box>
 );
 
 export default Settings;
