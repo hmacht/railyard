@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, IconButton, Tooltip } from "@radix-ui/themes";
-import { CodeSandboxLogoIcon, GearIcon } from "@radix-ui/react-icons";
+import { GearIcon } from "@radix-ui/react-icons";
 import { TerminalIcon, PlugsConnectedIcon} from "@phosphor-icons/react";
 
 interface SideMenuProps {

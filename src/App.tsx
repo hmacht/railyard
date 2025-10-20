@@ -17,7 +17,7 @@ function App() {
   return (
     <Theme
       appearance={themeAppearance}
-      accentColor="mint"
+      accentColor="green"
       grayColor="gray"
       panelBackground="solid"
       scaling="100%"
