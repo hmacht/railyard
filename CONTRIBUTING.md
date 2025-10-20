@@ -5,5 +5,5 @@ All PRs required a Code Owner Review. You can always ping a code owner in slack 
 
 Communication:
 - [Join our slack](https://join.slack.com/t/railyard-hq/shared_invite/zt-3g8pwcal0-d6Cl3~X8uzu552_zprIIuQ)!
-- Open an PR with clear description
-- Open an Issue with clear description
+- Open a PR with a clear description
+- Open an Issue with a clear description
