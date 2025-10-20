@@ -3,15 +3,16 @@ import { Theme, Flex } from "@radix-ui/themes";
 import "./App.css";
 import SideMenu from "./components/SideMenu.tsx";
 import CodeEditor from "./pages/CodeEditor.tsx";
+import Connection from "./pages/Connection.tsx";
 import Settings from "./pages/Settings.tsx";
 import HeaderBar from "./components/HeaderBar.tsx";
 
 function App() {
-  const [page, setPage] = useState<'code' | 'settings'>('code');
+  const [page, setPage] = useState<'code' | 'connection' | 'settings'>('code');
   const [themeAppearance, setThemeAppearance] = useState<'light' | 'dark'>('light');
   const [code, setCode] = useState('// Write your code here...');
   const [output, setOutput] = useState('');
-  const [projectPath, setProjectPath] = useState('/Users/fangjunlu/railyard');
+  const [projectPath, setProjectPath] = useState('');
 
   return (
     <Theme
@@ -24,20 +25,27 @@ function App() {
     >
       <Flex direction="column" style={{ height: '100vh', width: '100vw' }}>
         <HeaderBar 
-          onSettingsClick={() => setPage('settings')}
+          onConnectionClick={() => setPage('connection')}
           code={code}
           setOutput={setOutput}
           projectPath={projectPath}
         />
         <Flex direction="row" style={{ flex: 1, width: '100%', height: '100%' }}>
           <SideMenu selected={page} onSelect={setPage} />
-          {page === 'code' ? (
+          {page === 'code' && (
             <CodeEditor 
               code={code}
               setCode={setCode}
               output={output}
             />
-          ) : (
+          )} 
+          {page === 'connection' && (
+            <Connection 
+              projectPath={projectPath}
+              setProjectPath={setProjectPath}
+            />
+          )}
+          {page === 'settings' && (
             <Settings 
               themeAppearance={themeAppearance} 
               setThemeAppearance={setThemeAppearance} 

@@ -1,10 +1,11 @@
 import React from "react";
 import { Flex, IconButton, Tooltip } from "@radix-ui/themes";
 import { CodeSandboxLogoIcon, GearIcon } from "@radix-ui/react-icons";
+import { TerminalIcon, PlugsConnectedIcon} from "@phosphor-icons/react";
 
 interface SideMenuProps {
-  selected: "code" | "settings";
-  onSelect: (page: "code" | "settings") => void;
+  selected: "code" | "connection" | "settings";
+  onSelect: (page: "code" | "connection" | "settings") => void;
 }
 
 const SideMenu: React.FC<SideMenuProps> = ({ selected, onSelect }) => (
@@ -26,7 +27,18 @@ const SideMenu: React.FC<SideMenuProps> = ({ selected, onSelect }) => (
         aria-label="Code Editor"
         size="3"
       >
-        <CodeSandboxLogoIcon width="24" height="24" />
+        <TerminalIcon />
+      </IconButton>
+    </Tooltip>
+    <Tooltip content="Connection">
+      <IconButton
+        variant={selected === "connection" ? "solid" : "soft"}
+        color="plum"
+        onClick={() => onSelect("connection")}
+        aria-label="Connection"
+        size="3"
+      >
+        <PlugsConnectedIcon />
       </IconButton>
     </Tooltip>
     <Tooltip content="Settings">

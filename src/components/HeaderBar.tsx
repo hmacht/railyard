@@ -4,13 +4,13 @@ import { TargetIcon, PlayIcon } from "@radix-ui/react-icons";
 import { invoke } from "@tauri-apps/api/tauri";
 
 export interface HeaderBarProps {
-  onSettingsClick: () => void;
+  onConnectionClick: () => void;
   code: string;
   setOutput: (output: string) => void;
   projectPath: string;
 }
 
-const HeaderBar: React.FC<HeaderBarProps> = ({ onSettingsClick, code, setOutput, projectPath }) => {
+const HeaderBar: React.FC<HeaderBarProps> = ({ onConnectionClick, code, setOutput, projectPath }) => {
   const [isRunning, setIsRunning] = useState(false);
   const handleRun = async () => {
     setIsRunning(true);
@@ -33,7 +33,7 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ onSettingsClick, code, setOutput,
           variant="outline"
           color="gray"
           size="1"
-          onClick={onSettingsClick}
+          onClick={onConnectionClick}
         >
           <TargetIcon width={16} height={16} />
           {projectPath}
