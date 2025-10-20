@@ -6,7 +6,7 @@ Railyard is an open source text editor for rails console with AI superpowers, as
 ---
 
 ### Join the team
-Click [here](https://join.slack.com/t/railyard-hq/shared_invite/zt-3g8pwcal0-d6Cl3~X8uzu552_zprIIuQ) to join our Slack workforce. Message a code owner if you want to be an official team member, or just for the repo and open a PR (check out contributing tab for more info).
+Click [here](https://join.slack.com/t/railyard-hq/shared_invite/zt-3g8pwcal0-d6Cl3~X8uzu552_zprIIuQ) to join us on Slack. Message a code owner if you want to be an official team member, or just for the repo and open a PR (check out contributing tab for more info).
 
 ### About Railyard
 
